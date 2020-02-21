@@ -6,14 +6,14 @@ module pmod_7seg1 (
     input  CLK,
     input  RX,
     output TX,
-    output wire P2_1,
-    output wire P2_2,
-    output wire P2_3,
-    output wire P2_4,
-    output wire P2_7,
-    output wire P2_8,
-    output wire P2_9,
-    output wire P2_10
+    output wire P1A1,
+    output wire P1A2,
+    output wire P1A3,
+    output wire P1A4,
+    output wire P1A7,
+    output wire P1A8,
+    output wire P1A9,
+    output wire P1A10
     );
 
     wire [7:0] DATA_IN0;
@@ -42,7 +42,7 @@ module pmod_7seg1 (
         PMOD
     );
 
-    assign {P2_10, P2_9, P2_8, P2_7, P2_4, P2_3, P2_2, P2_1} = PMOD;
+    assign {P1A10, P1A9, P1A8, P1A7, P1A4, P1A3, P1A2, P1A1} = PMOD;
     assign DIGIT0 = DATA_IN0;
     assign DIGIT1 = DATA_IN1;
 

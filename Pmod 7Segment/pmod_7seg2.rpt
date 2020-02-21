@@ -1,0 +1,56 @@
+
+icetime topological timing analysis report
+==========================================
+
+Info: max_span_hack is enabled: estimate is conservative.
+
+Report for critical path:
+-------------------------
+
+        lc40_3_7_7 (LogicCell40) [clk] -> lcout: 1.491 ns
+     1.491 ns net_12015 (com1_inst.data[0])
+        t467 (LocalMux) I -> O: 1.099 ns
+        inmux_3_6_15772_15792 (InMux) I -> O: 0.662 ns
+        t96 (CascadeMux) I -> O: 0.000 ns
+        lc40_3_6_0 (LogicCell40) in2 -> carryout: 0.609 ns
+     3.861 ns t68
+        lc40_3_6_1 (LogicCell40) carryin -> carryout: 0.278 ns
+     4.140 ns net_15795 (com1_inst.tx1_data_SB_DFFE_Q_1_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_CARRY_CO_CI[2])
+        lc40_3_6_2 (LogicCell40) carryin -> carryout: 0.278 ns
+     4.418 ns net_15801 (com1_inst.tx1_data_SB_DFFE_Q_1_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_CARRY_CO_CI[3])
+        inmux_3_6_15801_15811 (InMux) I -> O: 0.662 ns
+        lc40_3_6_3 (LogicCell40) in3 -> lcout: 0.874 ns
+     5.954 ns net_11888 (com1_inst.tx1_data_SB_DFFE_Q_4_D_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I1)
+        t447 (LocalMux) I -> O: 1.099 ns
+        inmux_3_7_15891_15927 (InMux) I -> O: 0.662 ns
+        t104 (CascadeMux) I -> O: 0.000 ns
+        lc40_3_7_2 (LogicCell40) in2 -> lcout: 1.205 ns
+     8.921 ns net_12010 (com1_inst.tx1_data_SB_DFFE_Q_4_D_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I2)
+        odrv_3_7_12010_15980 (Odrv4) I -> O: 0.649 ns
+        t469 (LocalMux) I -> O: 1.099 ns
+        inmux_4_7_19720_19780 (InMux) I -> O: 0.662 ns
+        lc40_4_7_6 (LogicCell40) in0 -> lcout: 1.285 ns
+    12.616 ns net_15845 (com1_inst.tx1_data_SB_DFFE_Q_4_D_SB_LUT4_O_I1_SB_LUT4_O_I2)
+        t584 (LocalMux) I -> O: 1.099 ns
+        inmux_4_7_19741_19771 (InMux) I -> O: 0.662 ns
+        lc40_4_7_4 (LogicCell40) in3 -> lcout: 0.874 ns
+    15.252 ns net_15843 (com1_inst.tx1_data_SB_DFFE_Q_4_D_SB_LUT4_O_I1)
+        t582 (LocalMux) I -> O: 1.099 ns
+        inmux_4_6_19592_19664 (InMux) I -> O: 0.662 ns
+    17.013 ns net_19664 (com1_inst.tx1_data_SB_DFFE_Q_4_D_SB_LUT4_O_I1)
+        lc40_4_6_7 (LogicCell40) in1 [setup]: 1.007 ns
+    18.020 ns net_15723 (com1_inst.tx1_data[3])
+
+Resolvable net names on path:
+     1.491 ns ..  3.252 ns com1_inst.data[0]
+     4.140 ns ..  4.140 ns com1_inst.tx1_data_SB_DFFE_Q_1_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_CARRY_CO_CI[2]
+     4.418 ns ..  5.080 ns com1_inst.tx1_data_SB_DFFE_Q_1_D_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_I0_SB_CARRY_CO_CI[3]
+     5.954 ns ..  7.716 ns com1_inst.tx1_data_SB_DFFE_Q_4_D_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I2_SB_LUT4_O_I1
+     8.921 ns .. 11.331 ns com1_inst.tx1_data_SB_DFFE_Q_4_D_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_O_I2
+    12.616 ns .. 14.378 ns com1_inst.tx1_data_SB_DFFE_Q_4_D_SB_LUT4_O_I1_SB_LUT4_O_I2
+    15.252 ns .. 17.013 ns com1_inst.tx1_data_SB_DFFE_Q_4_D_SB_LUT4_O_I1
+                  lcout -> com1_inst.tx1_data[3]
+
+Total number of logic levels: 8
+Total path delay: 18.02 ns (55.49 MHz)
+
