@@ -25,15 +25,20 @@ If you want run the second example, change the first line of the Makefile and re
 
 ## 7 Segment Display
 
-Make sure that 7 segment dispaly is connected to Pmod 1A. Then use `make prog` and `python3 pmod_7seg1.py`. 
+Make sure that the 7 segment dispaly is connected to Pmod 1A. Then use `make prog` and `python3 pmod_7seg1.py`. 
 
 ![pmod_7seg1.png](img/pmod_7seg1.png)
+
+As in the previous case, change the first line of the Makefile to run the second example.
 
 ![pmod_7seg1.png](img/pmod_7seg2.png)
 
 ## templates
 
+The templates folder containes examples that serve as examples on how to use the modules. In this templates the input is directly connected to the output. The folder also contains a python GUI, that allows to control all inputs and outputs in hex format. 
+
 ![template.png](img/template.png)
 
 ## com folder
 
+This folder contains the communoication modules. Note that you can not build these modules. However, you can run the simulation with `make sim`.
