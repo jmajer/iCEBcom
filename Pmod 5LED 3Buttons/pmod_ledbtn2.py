@@ -18,6 +18,9 @@ class Example(QWidget):
 
         layout = QVBoxLayout()
 
+        self.label1 = QLabel("red")
+        layout.addWidget(self.label1)
+
         self.slider1 = QSlider(Qt.Horizontal)
         self.slider1.setFocusPolicy(Qt.StrongFocus)
         self.slider1.setTickPosition(QSlider.TicksBothSides)
@@ -25,6 +28,9 @@ class Example(QWidget):
         self.slider1.setSingleStep(1)
         self.slider1.valueChanged.connect(self.setvalue1)
         layout.addWidget(self.slider1)
+
+        self.label2 = QLabel("green")
+        layout.addWidget(self.label2)
 
         self.slider2 = QSlider(Qt.Horizontal)
         self.slider2.setFocusPolicy(Qt.StrongFocus)
